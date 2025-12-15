@@ -1,49 +1,91 @@
-¡Perfecto! Veo que ya tienes bastante contenido en tu notebook, y lo que necesitamos es completar las partes que te piden en el enunciado. Aquí te dejo una guía paso a paso para que puedas organizar la información y lo que debes incluir.
+1. Evidencia técnica seleccionada
 
-### 1. **Evidencia técnica seleccionada**
+Evidencia 1: SHA-256 generado
 
-#### ¿Qué foto o evidencia tomar?
+Descripción: A continuación se muestra el resultado del cálculo del hash SHA-256 del archivo 00_AlejandroGonzalo.ipynb, que garantiza la integridad del archivo.
 
-* **Captura de pantalla del notebook** mostrando los resultados de la ejecución del código, como el `SHA-256` generado o la creación del archivo `registro_hash.json`. Esto es una evidencia clara de que se realizó el proceso.
-* **Captura del commit en GitHub**: Si has subido el notebook a GitHub, una captura de pantalla del commit con su mensaje (según el principio WORM) también sería útil para mostrar la trazabilidad.
+Foto: Captura de pantalla de la celda donde se muestra el hash SHA-256 generado.
 
-#### ¿Qué incluir?
+(Ejemplo: foto del código de la celda donde se muestra "SHA-256 generado")
 
-* Captura de pantalla de la celda donde generas el `SHA-256` y donde guardas el archivo de registro (`registro_hash.json`).
-* Si ya subiste el notebook a GitHub, incluye la captura del commit que registraste, que debe ser inmutable.
+Evidencia 2: Registro de hash guardado en JSON
 
-### 2. **Explicación breve de lo conseguido**
+Descripción: El hash generado y la fecha de creación se guardan en un archivo registro_hash.json, lo que asegura la trazabilidad y la transparencia del proceso.
 
-En este punto, debes explicar de manera concisa qué lograste con el ejercicio. Tienes que relacionar los objetivos de la práctica con lo que hiciste en el código. Aquí tienes un ejemplo de cómo podría quedar:
+Foto: Captura de pantalla de la celda donde se muestra el mensaje "Registro creado: registro_hash.json ✅" después de haber generado el archivo JSON.
 
-**Ejemplo**:
-"He creado un notebook reproducible en Google Colab, donde implementé el cálculo de un `SHA-256` para garantizar la integridad de un archivo. El registro de este hash, junto con la fecha de creación, se guarda en un archivo JSON, lo que asegura que el proceso sea trazable y reproducible. Además, siguiendo el principio WORM, subí el archivo a GitHub con un commit inmutable, asegurando la transparencia y la capacidad de reproducir los resultados en el futuro."
+(Ejemplo: foto de la salida que muestra el mensaje "Registro creado: registro_hash.json ✅")
 
-### 3. **Duda principal pendiente**
+2. Explicación breve de lo conseguido
 
-Aquí debes incluir cualquier duda o dificultad que hayas tenido durante el proceso, que puede estar relacionada con la trazabilidad, el uso de Git, o la configuración del entorno. Algunas ideas podrían ser:
+He creado un notebook reproducible en Google Colab, en el que implementé un proceso para garantizar la integridad de un archivo mediante el cálculo de su hash SHA-256. Este hash, junto con la fecha de creación, se guarda en un archivo JSON llamado registro_hash.json, asegurando la trazabilidad y la transparencia del proceso. Además, siguiendo el principio WORM, el notebook fue subido a GitHub utilizando un commit inmutable, lo que permite la reproducibilidad y verificación de los resultados a lo largo del tiempo.
 
-**Ejemplo**:
-"Mi principal duda fue sobre cómo asegurarme de que el hash se mantuviera constante incluso si las librerías o el entorno de ejecución cambian en el futuro. ¿Hay alguna manera más eficiente de gestionar las dependencias para que el notebook sea completamente reproducible a largo plazo?"
+3. Duda principal pendiente
 
-### 4. **Autoevaluación rápida**
+Mi principal duda fue sobre cómo manejar posibles cambios en las versiones de las librerías y entornos de ejecución. Si alguna librería cambia o se actualiza, ¿cómo puedo asegurarme de que mi notebook siga siendo completamente reproducible? ¿Existen mejores prácticas para gestionar las dependencias a largo plazo sin perder la trazabilidad?
 
-En este punto, reflexionas sobre tu desempeño. Te proporciono un ejemplo basado en lo que ya tienes:
+4. Autoevaluación rápida
 
-**Ejemplo**:
-"**Exactitud**: 2 (El cálculo del hash fue realizado correctamente y el archivo de registro fue generado sin errores).
-**Explicabilidad**: 2 (El proceso está bien documentado, con celdas explicativas claras en Markdown).
-**Economía**: 2 (El código es eficiente, no tiene redundancias, y el notebook está limpio)."
+Exactitud: 2
+El cálculo del hash fue realizado correctamente y el archivo de registro se creó sin errores.
 
-Comentario adicional: "Todo el proceso fue realizado siguiendo las buenas prácticas de trazabilidad y control de versiones, y el notebook es completamente reproducible. Sin embargo, tengo dudas sobre cómo manejar mejor las versiones de las librerías en el futuro."
+Explicabilidad: 2
+El proceso está documentado adecuadamente. Cada celda de código tiene su explicación correspondiente en Markdown.
 
----
+Economía: 2
+El código es eficiente y limpio. No hay redundancias ni procesos innecesarios.
 
-### Resumen de lo que necesitas hacer:
+Comentario adicional:
+El proceso de trazabilidad y control de versiones ha sido realizado correctamente. Sin embargo, sigo teniendo dudas sobre cómo manejar las versiones de las librerías para garantizar la reproducción exacta del entorno en el futuro.
 
-1. **Evidencia técnica seleccionada**: Captura de pantalla de la celda con el `SHA-256` generado y del archivo `registro_hash.json`, o el commit en GitHub si lo subiste.
-2. **Explicación breve de lo conseguido**: Resumen de lo que lograste, mencionando la trazabilidad, control de versiones y reproducibilidad.
-3. **Duda principal pendiente**: Reflexión sobre las dificultades que encontraste.
-4. **Autoevaluación rápida**: Reflexión sobre cómo crees que te fue en términos de exactitud, explicabilidad y economía.
+Instrucciones de entrega
 
-Con todo esto, tendrás el contenido listo para completar tu entrega. ¿Te gustaría que te ayudara con alguna parte más específica o tienes dudas sobre algún aspecto en particular?
+Capturas de pantalla:
+
+Toma una foto de la celda donde se muestra el cálculo del SHA-256 generado, que es el resultado de la ejecución de tu código.
+
+Toma una foto de la celda donde se muestra el mensaje "Registro creado: registro_hash.json ✅" para mostrar que guardaste el hash en un archivo JSON.
+
+Subir a Blackboard:
+
+Asegúrate de adjuntar las capturas de pantalla que acabas de tomar.
+
+Completa la hoja de trabajo con los textos que te proporcioné (explicación, dudas y autoevaluación).
+
+Si ya has subido tu notebook a GitHub, incluye también el enlace de tu commit como evidencia de la trazabilidad y el principio WORM.
+
+Código relevante a mostrar (para la foto)
+
+A continuación te incluyo el fragmento de código que debe quedar visible en las capturas de pantalla:
+
+# Cálculo del hash SHA-256
+nombre_archivo = '00_AlejandroGonzalo.ipynb'
+
+if not os.path.exists(nombre_archivo):
+    open(nombre_archivo, 'w').write('Plantilla reproducible')
+
+with open(nombre_archivo, 'rb') as f:
+    contenido = f.read()
+
+sha = hashlib.sha256(contenido).hexdigest()
+print('SHA-256 generado:\\n', sha)
+
+
+En la captura de pantalla debe verse el resultado de este código, que te genera el hash.
+
+Y luego:
+
+# Registro en archivo JSON
+registro = {
+    'archivo': nombre_archivo,
+    'sha256': sha,
+    'fecha': datetime.datetime.now().isoformat()
+}
+
+with open('registro_hash.json', 'w') as f:
+    json.dump(registro, f, indent=2)
+
+print('Registro creado: registro_hash.json ✅')
+
+
+Aquí debes mostrar la salida que confirma la creación del archivo JSON, con el mensaje "Registro creado: registro_hash.json ✅".
